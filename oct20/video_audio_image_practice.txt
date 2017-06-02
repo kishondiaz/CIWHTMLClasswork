@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Video/Audio/Images Practice</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="video/audio/images practice" />
+		<meta name="keywords" content="HTML,CSS,forms,fun"/>
+		<meta name="author" content="Kishon Diaz" />
+	</head>
+	<body>
+	
+		
+	</body>
+	
+	
+</html>

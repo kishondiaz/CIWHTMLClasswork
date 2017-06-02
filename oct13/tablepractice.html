@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table Practice</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="table practice">
+		<meta name="keyword" content="HTML, CSS, tables, fun">
+		<meta name="author" content="Kishon Diaz">
+		<style type="text/css">
+			table,th,td
+			{
+				border:1px solid gray;
+			}
+			td,th
+			{
+				padding:15px;
+			}
+			#nopad
+			{
+				padding:none;
+				
+			}
+			.noborder
+			{
+				border:none;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+	This is a 2 column 2 row table:<br/><br/>
+	<table>
+		<tr><!--Starts a row in the table-->
+			<!--the th or td tags determine the number of columns by specifying cells-->
+			<th>cell 1</th><!--stands for table header is cantered and bold-->
+			<th>cell 2</th>
+		</tr>
+		<tr>
+			<td>cell 3</td><!--table data, all other cells-->
+			<td>cell 4</td>
+		</tr>
+	</table>
+	<br/>
+	This is a 3 column 3 row table:<br/><br/>
+	<table>
+	<caption>3 col 3 row table</caption>
+		<tr>
+			<th>cell 1</th>
+			<th>cell 2</th>
+			<th>cell 3</th>
+		</tr>
+		<tr>
+			<td>cell 3</td>
+			<td>cell 4</td>
+			<td>cell 5</td>
+		</tr><tr>
+			<td>cell 7</td>
+			<td>cell 8</td>
+			<td>cell 9</td>
+		</tr>
+	</table>
+	This is a 2 column 3 row table with 1st column merged:<br/><br/>
+	<table>
+		<tr>
+			<td rowspan="3">Cell 1</td>
+			<td>Cell 2</td>
+		</tr>
+		<tr>
+			<td>Cell 3</td>
+		</tr>
+		<tr>
+			<td>Cell 4</td>
+		</tr>
+	</table>
+	This is a 2 column 3 row table with 1st row merged:<br/><br/>
+	<table>
+		<tr>
+			<td colspan="2" >Cell 1</td>
+			
+		</tr>
+		<tr>
+			<td>Cell 2</td>
+			<td>Cell 3</td>
+		</tr>
+		<tr>
+			<td>Cell 4</td>
+			<td>Cell 5</td>
+		</tr>
+	</table>
+	This is a 2 column 3 row table with 1st row merged:<br/><br/>
+	<table>
+		<tr>
+			<td>Cell 1</td>
+			<td rowspan="2">Cell 2</td>
+			<td >Cell 3</td>
+			
+		</tr>
+		<tr>
+			<td>Cell 4</td>
+			<td>Cell 5</td>
+			
+		</tr>
+		<tr>
+			<td>Cell 6</td>
+			<td colspan="3">Cell 7</td>
+		</tr>
+
+	</table>
+	This is a 2 column 3 row table with 1st row merged:<br/><br/>
+	<table>
+		<tr>
+			<td >Cell 1</td>
+			<td> Cell 2</td>
+			
+		</tr>
+		<tr>
+			<td> Cell 3</td>
+			<td id="nopad">
+				<table class="noborder">
+					<tr class="noborder">
+						<td class="noborder">Cell 4</td>
+						<td class="noborder"> Cell 5</td>
+												
+					</tr>
+					<tr class="noborder">
+						<td class="noborder" >Cell 6</td>
+						<td class="noborder">Cell 7</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	This is a simple table to show some other tags:<br/><br/>
+	<table>
+		<colgroup>
+			<col span="2" style="background-color:red" >
+			<col style="background-color:yellow" >
+		</colgroup>
+		<thead>
+			<tr>
+				<th>cell 1</th>
+				<th>cell 2</th>
+				<th>cell 3</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td>cell 3</td>
+				<td>cell 4</td>
+				<td>cell 5</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>cell 3</td>
+				<td>cell 4</td>
+				<td>cell 5</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	</body>
+
+
+</html>

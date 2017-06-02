@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kishon's Resume Site</title>
+		<meta charset="UTF-8">
+		<!--name is and attribute value-->
+		<meta name="description" content="Resume for homework">
+		<meta name="keywords" content="HTML,list,tags,css">
+		<meta name="author" content="Kishon Diaz">
+		<!-- using css to style html-->
+		<style type="text/css">
+			body
+			{	white-space: nowrap;
+			}
+			h1
+			{	display:inline;	
+			}
+			h4
+			{	text-decoration: underline;
+				display:inline;
+			}
+			ul
+			{	margin-left:40px;
+				font-size:14px;				
+			}
+			ul li
+			{	padding-bottom:5px;
+			}
+			ul ul li
+			{	padding-top:10px;
+				padding-bottom:5px;
+			}
+			img
+			{
+				float: left;
+				width:260px;
+				height:220px;
+				max-height: 220px;
+				z-index: -1;
+				margin: 0px 10px 10px 0;			
+				
+			}
+			#clear
+			{
+				clear:both;
+			}
+			#heading
+			{
+				float:left;
+				margin-top:123px;
+			}
+			#objectives
+			{
+				margin:10px 0 0 40px;
+			}
+			#startdate
+			{	display:inline;
+				margin-left:200px;
+			}
+			#enddate
+			{	display:inline;
+				margin-left:492px;
+			}
+			#startdatetwo
+			{	display:inline;
+				margin-left:432px;
+			}
+			#enddatetwo
+			{
+				display:inline;
+				margin-left:556px;
+			}
+			#startdatethree
+			{
+				display:inline;
+				margin-left:450px;
+			}
+			#enddatethree
+			{
+				display:inline;
+				margin-left:464px;
+			}
+			#educationdate
+			{
+				display:inline;
+				margin-left:272px;
+			}
+			#educationdatetwo
+			{
+				display:inline;
+				margin-left:241px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--I wanted my Page to look just like a paper Resume that I have made recently with the help of a professor this paper resume --> 
+		<!--Image of me--> 
+		<img src="./kishon_image.png" alt="Picture of Kishon" height="369" width="416" />
+		<div id="heading"><h1>Kishon Diaz</h1> <br/>
+		2690 Somerset Dr. Apt z106, Fort Lauderdale, Fl, 33311<br/>
+		561-420-7359<br/>
+		E-mail: simplecastic@gmail.com<br/>
+		</div>
+		<!--This br is used as a spacer and is also the clea for the float of the image and heading div--> 
+		<br id="clear"/>
+		
+		<h4>OBJECTIVE</h4> <br/>
+			<div id="objectives">To obtain a position in a challenging environment that allows me to utilize my software development,
+			web and<br/>creative skills to help develop new high-tech products.<br/><br/>
+			</div>
+		<h4>TECHNICAL SKILLS</h4>
+			<ul>
+				<li>Proficient in Microsoft Word, Excel and PowerPoint</li>
+				<li>Experience with the following programming languages: Python, Java, Android Programming</li>
+				<li>Currently Working on CIW Certification, A+ Practical Certification</li>
+				<li>Skilled in Android XML, HTML, CSS, Adobe Flash, Sqlite, Microsoft SQL,C++,C#</li>
+				<li>Artistic skills include: Realism, Painted murals, Acrylic paintings, air brush, color pencil, chalk, <br/>
+				use of Wacom drawing tablet to draw in PhotoShop, Adobe Flash, Karita, and Gimp</li>
+			</ul>
+		<h4>Experience</h4>
+			<!--Created a unordered list using muiltiple id attributes to manipulate how the list looks--> 
+			<ul>
+				<li><strong>Xfinity/Comcast,</strong>, 141 NW 16thSt.,Pompano Beach,FL,33062 <div id="startdate"><strong>January 2013-</strong></div><br/>
+					<em>Dispatcher</em> <div id="enddate"><strong>December 2013</strong></div> 
+					<ul>
+						<li>Helped the Comcast technicians with their jobs using a computer system activating boxes, internet and phone.</li>
+						<li>Dealt with disgruntled customers and helped to diffuse volatile situations so that the technicians could finish<br/>
+						repairs and installations.</li>
+					</ul>
+				</li>
+				<li><em>Comcast Technician 3</em><div id="startdatetwo"><strong>February 2008-</strong></div><br/>
+					<div id="enddatetwo"><strong>December 2012</strong></div>
+					<ul>
+						<li>Worked as a Comcast Technician installing and repairing internet, phone and cable television issues.</li>
+						<li>Dealt with customers on a daily basis.</li>
+					</ul>
+				</li>
+				<li><strong>US Marine Corp,</strong> <div id="startdatethree"><strong>2005-2007</strong></div><br/>
+					<em>Lance Corporal</em> 
+					<ul>
+						<li>Served in the United States Marine Corp.</li>
+						<li>Worked as an aviation electronics specialist.</li>
+					</ul>
+				</li>
+			</ul>
+		<h4>EDUCATION</h4>
+			<ul>
+				<li><strong>Broward College</strong>,3501 Davie Rd,Davie,FL,33314 <div id="educationdate"><strong>2012-Present</strong></div><br/>
+					<em>Pursuing AA in Computer Science</em></li>
+				<li><strong>Piper High School</strong>,8000 NW 44th St,Sunrise,FL,33351 <div id="educationdatetwo"><strong>2004</strong></div><br/>
+					<em>High School diploma</em></li>
+			</ul>
+	</body>
+</html>

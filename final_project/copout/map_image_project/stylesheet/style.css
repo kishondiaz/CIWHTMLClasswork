@@ -1,0 +1,15 @@
+body
+{
+	background: -moz-radial-gradient(white,#3366FF,blue);
+	background: -webkit-radial-gradient(white,#3366FF,blue);
+	background: radial-gradient(white,#3366FF,blue);
+}
+
+#shapes
+{
+	display:flex;
+	position:relative;
+	left:35%;
+	top:-200px;
+	background-color: rgba(255,255,255,.8);
+}

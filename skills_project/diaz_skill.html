@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Skills</title>
+		<meta charset="UTF-8" >
+		<meta name="description" content="Skills Page" />
+		<meta name="keywords" content="HTML,CSS,forms,fun"/>
+		<meta name="author" content="Kishon Diaz" />
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet/style.css"/>
+		
+		<!-- i used a sql database to store my c++, c#, programs in there i would have like to added them all but cant -->
+		
+		<!-- this sql and worker class comes from  https://github.com/kripken/sql.js/ this libariy allows you to read sqllite database 
+				and with this is created sqllite3 database and pre-filled it with my projects from my c++ and c# class
+		-->
+		<script src="javascript/sql.js"></script>
+		<script src="javascript/worker.js"></script>
+		
+		
+		<!-- this libary is the SyntaxHighlighter libariy and is used with the pre tag and class brush:js to create the numbered codeline 
+				its not prefect but it works  here is the website http://alexgorbatchev.com/SyntaxHighlighter/about.html
+		-->
+		<script src="javascript/shCore.js"></script>
+		<script src="javascript/shBrushJScript.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet/shCoreDefault.css"/>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- this creates the moving backgraound -->
+			<video autoplay loop muted id="background">
+			<source src="assets/sparkling_stars.mp4">
+			</video> 
+			<header>
+				<h1>My Skill Page</h1>
+			</header>
+				
+			<!-- The reason why i used the # instead of creating multiple pages i
+			uses the a tag  in my JS to create a dynamic free flowing  page that does not have to load  -->
+			<nav>
+				<ul id="navilist">
+					<li><a class="navhere" href="#home">Home</a></li>
+					<li><a class="navhere" href="#gallery">Gallery</a></li>
+					<li><a class="navhere" href="#code">My Codes</a></li>
+				</ul>
+				
+			</nav>
+			<div id="content">
+
+				<div id="inner_content">
+					<!-- These drawings are all my drawings -->
+					<table id="gallery">
+						<tr>
+							<td>
+								<img class="images" src="assets/action_ash.jpg" alt=""/>
+							</td>
+							<td>
+								<img class="images" src="assets/ashleyfixed.jpeg" alt="" style="position:relative;z-index: -1;padding-left:0;left:-285px;"/>
+							</td>
+							<td>
+								<img class="images" src="assets/black_and_white_ash_gram._no_wings.jpeg" alt="" style="position:relative;z-index: -1;padding-left:0;left:-610px;"/>
+							</td>
+							<td>
+								<img class="images" src="assets/sky.png" alt="" style="position:relative;z-index: -1;padding-left:0;left:-950px;"/>
+							</td>
+							
+						</tr>
+						<tr>
+							
+							<td>
+								<img class="images" src="assets/friend.jpg" alt="" />
+							</td>
+							<td>
+								<img class="images" src="assets/martian_lutherking.jpg" alt="" style="position:relative;z-index: -1;padding-left:0;left:-285px;"/>
+							</td>
+							<td>
+								<img class="images" src="assets/tupac.jpg" alt="" style="position:relative;z-index: -1;padding-left:0;left:-610px;"/>
+							</td>
+							<td>
+								<img class="images" src="assets/meshia.png" alt="" style="position:relative;z-index: -1;padding-left:0;left:-950px;"/>
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								<img class="images" src="assets/nafia.jpg" alt="" />
+							</td>
+							<td>
+								<img class="images" src="assets/kaylin.png" alt="" style="position:relative;z-index: -1;padding-left:0;left:-285px;"/>
+							</td>
+							<td>
+								<img class="images" src="assets/kaylin.jpeg" alt="" style="position:relative;z-index: -1;padding-left:0;left:-610px;"/>
+							</td>
+							<td>
+								<img class="images" src="assets/can.png" alt="" style="position:relative;z-index: -1;padding-left:0;left:-950px;"/>
+							</td>
+							
+						</tr>
+						
+					</table>
+					
+				</div>
+				
+				<!-- this is so i can dynamically add the pre tags -->
+				<div id="coding">
+				
+						<script src="javascript/initiateJs.js"></script>
+
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<!-- This is the main JS file  -->
+		<script src="javascript/jscript.js"></script>
+	</body>
+	
+	
+</html>

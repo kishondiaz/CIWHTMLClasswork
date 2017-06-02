@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Practice</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Form practice" />
+		<meta name="keywords" content="HTML,CSS,forms,fun"/>
+		<meta name="author" content="Kishon Diaz" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/style.css"/>
+
+	
+	</head>
+	<body>
+		
+		<header>here</header>
+		<!-- used to contain everything and initialize the scale in css javascript -->
+		<div id="wrapper">
+			<!-- set this form to onsubmit return false to stop form from sending to new page -->
+			
+			<form name="thisForm" id="info_form" onsubmit="return false" method="post" >
+				<!-- div front is used to help dynamiclly resize page with css scale in javascript love it -->
+				<div id="front">
+					<label>Welcome to our school please fill the form </label><br/>
+					<!-- required validation and autocomplete to get rid of drop down list -->
+					<input class= "name" id="firstName" type="text" name="fname" size="40" placeholder="First Name" autocomplete="off" required /><br/>
+					<input class= "name" id="lastName" type="text" name="lname" size="40" placeholder="Last Name" autocomplete="off" required /><br/>
+					<input class= "name" id="studentID_id" type="text"  name="student" size="30" placeholder="Enter you Student ID Number" autocomplete="off" required /><br/>
+					<input class= "name" id="address_id" type="text" name="address" size="40" placeholder="Address" autocomplete="off" required /><br/>
+					<input class= "name" id="city_id" type="text" name="city" size="40" placeholder="City" autocomplete="off" required /><br/>
+					<input class= "name" id="state_id" type="text" name="state" size="10" placeholder="State" autocomplete="off" required /><br/>
+					<input class= "name" id="zip_id" type="tel" pattern="\d{5}"name="zip" size="5" placeholder="Zip Code" autocomplete="off" required /><br/>
+					<input class= "name" id="homePhone_id" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="homePhone" size="40" placeholder="Home Phone Number" autocomplete="off" required /><br/>
+					<input class= "name" id="cellPhone_id" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="cellPhone" size="40" placeholder="Cell Phone Number" autocomplete="off" required /><br/>
+					<input class= "name" id="email_id" type="email" name="email" size="40" placeholder="Email Address" autocomplete="off" required /><br/>
+					<input class= "name" id="advisor_id" type="text" name="advisor" size="40" placeholder="Advisor Name" autocomplete="off" required /><br/>
+					<br/>
+					Which Degree are you obtaining:<br/>
+					<select id="degree" multiple>
+						<option value="computer_science_aa">Computer Science AA</option>
+						<option value="engineering_aa">Engineering AA</option>
+						<option value="web_design_as" selected>Web Design AS</option>
+						<option value="software_developer_as">Software Developer AS</option>
+						<option value="database_administrator_as">Database Administrator AS</option>
+						<option value="microsoft_mcse_as">Microsoft MCSE AS</option>
+					</select>
+					<br/>
+					<br/>
+					<label>Gender </label><br/>
+					<input type="radio" name="gender" value="male" checked /> Male
+					<br/>
+					<input type="radio" name="gender" value="female" />Female
+					<br/>
+					<input type="radio" name="gender" value="male" /> Not Reported
+					<br/><br/>
+					Planned form of payment:<br/>
+					<input type="checkbox" name="reason" value="Academic Goals/Career Path" />Academic Goals/Career Path<br/>
+					<input type="checkbox" name="reason" value="Change of Major" checked />Change of Major<br/>
+					<input type="checkbox" name="reason" value="Course Substitutions" />Course Substitutions<br/>
+					<input type="checkbox" name="reason" value="Apply for Graduation" />Apply for Graduation<br/>
+					<input type="checkbox" name="reason" value="Other" onclick="onchangeed()"/>Other<br/>
+					<textarea id="textarea_id"></textarea>
+					<br/>
+					<input id="submitClick" type="submit" value="submit"/> <input id="resetClick" type="reset" value="reset" />
+				</div>
+				
+			</form>
+			<!-- div back is used to display info dynamically scaling with css and javascript -->
+			<div id="back">
+				<div id="nametxt"><label>Student Name:</label></div><br/>
+				<div id="studenttxt"><label>Student ID:</label></div><br/>
+				<div id="addresstxt"><label>Address:</label></div><br/>
+				<div id="citytxt"><label>City:</label></div><br/>
+				<div id="statetxt"><label>State:</label></div><br/>
+				<div id="ziptxt"><label>Zip Code:</label></div><br/>
+				<div id="hometxt"><label>Home #:</label></div><br/>
+				<div id="celltxt"><label>Cell Phone #:</label></div><br/>
+				<div id="emailtxt"><label>Email:</label></div><br/>
+				<div id="advisortxt"><label>Advisor:</label></div><br/>
+				<div id="degreetxt"><label>Degree:</label></div><br/>
+				<div id="genedertxt"><label>Gender:</label></div><br/>
+				<div id="reasontxt"><label>Reason:</label></div><br/>
+				<div id="othertxt"><label>other:</label><br/><textarea id="textcontainer"></textarea></div><br/>
+				<button id="new_student" onclick="goback()">Finish</button>
+				
+			</div>
+			<!-- I asked my wife to help me record this that was awesome too -->
+			<audio  id="wifesVoice">
+					<source src="assets/voice_012.m4a" type="audio/mp4">
+					<source src="assets/voice_012.ogg" type="audio/ogg">
+					Your browser does not support the HTML5 audio elements
+			</audio>
+				
+		</div>
+		<!-- I tired soooo hard to use a database i attempted with sqllite and using a library made by https://github.com/kripken/sql.js/ lovasoa 
+				I was able to read my tables using xhttpRequest and this library but could not write to it
+				stupid me so I did this rescaling instead why did it take me so long time to learn php-->
+		<script src="javascript/splashscreen.js"></script>
+	
+	</body>
+	
+</html>

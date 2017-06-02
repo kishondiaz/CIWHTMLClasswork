@@ -1,0 +1,341 @@
+
+header
+{
+	position:relative;
+	margin:-8px 150% 0  -8px;
+	width:100%;
+	height:50px;
+/* 	border:2px  dashed black; */
+	background-color:#a6a6a6;
+	z-index:12;
+	text-align:center;
+	box-shadow: 1px 6px 3px #333333;
+	
+}
+header > span
+{
+	position:relative;
+	left: 4%;
+	font-size:40px;
+	font-family: 'Bangers', cursive;
+	
+}
+nav
+{
+	position:relative;
+	padding-top:6px;
+	padding-bottom:6px;
+	margin: -5px 150% 20px  -8px;
+	width:100%;
+	height:50px;
+	/* border:2px  dashed gray; */
+	background-color:#808080;
+	z-index:10;
+	box-shadow: 1px 6px 3px #333333;
+}
+nav > #btncontainer
+{
+	position:fixed;
+	left:200px;
+	width:150px;
+	height:37px;
+	border:3px  outset gray;
+	margin-top:2px;
+	padding-left:10px;
+	padding-top:7px;
+	padding-bottom:2px;
+	border-radius: 12px;
+	
+}
+nav > #btncontainer > button
+{
+	position:relative;
+	display:inline;
+	left:6px;
+	width:50px;
+	bottom:2px;
+	padding :5px;
+	height:40px;
+	margin-right:10px;
+	padding-bottom:3px;
+	z-index:11;
+	border-radius: 10px;
+	
+	
+}
+#homeicon
+{
+	background-image: url("../assets/images/icons/home.png");
+	background-color:lightgray;
+	background-size:50px;
+	background-position:center;
+	background-repeat: no-repeat;
+	
+}
+#menuicon
+{
+	background: url("../assets/images/icons/menu.png");
+	background-color:lightgray;
+	background-size:50px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+nav >#calenderset
+{
+
+	position:relative;
+	left:80%;
+	width:60px;
+	height:30px;
+	padding : 0 60px 15px 60px;
+	/* padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom:10px; */
+	margin-top:3px;
+	margin-left:100px;
+	margin-right:100%;
+	border:2px  outset gray;
+	z-index:10;
+	border-radius: 12px;
+}
+
+
+
+nav > #calenderset > button
+{
+	position:fixed;
+	font-size:20px;
+	padding: 5px 30px 5px 30px;
+	margin-top:2px;
+	margin-left:-50px;
+	z-index:11;
+	border-radius: 12px;
+	
+}
+nav > #calenderset > #calenderindex
+{
+	position:fixed;
+	font-size:20px;
+	padding: 0 20px 0 20px;
+	margin-left:-50px;
+	/* this transform  hides the and moves the index chenge the scaleY to unhide and hide */
+	transform:translateY(42px) scaleY(0); 
+	z-index:12 ;
+	
+}
+aside
+{
+	position:fixed;
+	border:2px  dashed black;
+	padding-left:0;
+	padding-right:0;
+	margin-top:-20px;
+	min-height:670px;
+	/* this transform hides the menu */
+	transform:scaleX(0);
+	left:0;
+	height:69% ;
+	z-index:11;
+	background-color:black;  
+}
+aside > ul
+{
+	position:relative;
+	list-style: none;
+	margin-top:50px;
+	
+}
+aside > ul > li
+{
+	
+	position:relative;
+	margin-top:9px;
+	bottom:50px;
+	border:2px  solid black;
+	padding-right:200px;
+	padding-left:200px;
+	padding-top:50px;
+	padding-bottom:20px;
+	margin-right:2px;
+	margin-left:-48px;
+	background-color:gray;  
+	
+}
+aside > ul > li > a
+{
+	position:relative;
+	font-size:25px;
+	width:100%;
+	bottom:20px;
+	
+}
+footer
+{
+	
+	position:fixed;
+	margin-top:6px;
+	top:92%;
+	border:2px  dashed black;
+	width:100%;
+	height:70px;
+	right:.2px;
+	background-color:black; 
+	z-index:10;
+	
+	
+	
+}
+#wrapper
+{
+	position:relative;
+	width:100%;
+	height:100%; 
+	margin-left:auto;
+	margin-right:auto;
+	min-width:900px;
+}
+#canvaspage
+{
+	position:fixed;
+	border:1px  soft black;
+	
+	/* this transform is the hidden position */
+	transform:translateY(60px) scaleY(.5); 
+	/* this  top is the hidden position too*/
+	top:81%; 
+	/* this height is the hidden position */
+	 height:120px; 
+	
+	
+	/* this transform is the opened position */
+	/* transform:translateY(0) scaleY(1);  */
+	
+	/* this is top is the open position */
+	/* top:108px; */
+	
+	 /* this height is the open position */
+	/* height:100%;  */
+	
+	width:100%;
+	right:.2px;
+	background-color:gray; 
+	z-index:9;
+	
+}
+#fullscreenexitset
+{
+	position:relative;
+	left:80%;
+	width:60px;
+	height:30px; 
+	
+	
+	padding : 0 60px 15px 60px;
+	/* padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom:10px; */
+	margin-top:-73px;
+	margin-left:90px;
+	margin-right:100%;
+	border:2px  outset gray;
+	z-index:10;
+	border-radius: 12px;
+	visibility:hidden;
+}
+#fullscreenexit
+{
+	position:relative;
+	font-size:20px;
+	padding: 5px 30px 5px 30px;
+	margin-top:2px;
+	margin-left:-50px;
+	z-index:11;
+	border-radius: 12px;
+}
+#canvaspage>#canasdrawnobe
+{
+	/* position:fixed;
+	padding:0 20px 0 20px;
+	left:50%;
+	width:10px;
+	height:50px;
+	border:1px  solid black;
+	background-color:lightgray;  */
+}
+#canasdrawnobe
+{
+	position:fixed;
+	padding:0 20px 0 20px;
+	left:50%;
+	width:10px;
+	height:50px;
+	border:1px  solid black;
+	background-color:lightgray; 
+	z-index:30;
+	box-shadow: 1px 6px 3px #333333;
+	border-radius: 12px;
+}
+#canvaspage>#canvascontainer
+{
+	position:relative;
+	overflow:auto;
+	padding:0 20px 0 20px;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin-left:-20px;
+	width:100%;
+	height:100%;
+	/* border:2px  dashed black; */
+	transform:scaleY(0);
+	/* background-color:black;  */
+	z-index:11;
+}
+#scrollCantiner
+{
+	position:relative;
+	overflow:auto;
+	
+}
+#canvaspage >#canvascontainer> #canvas
+{
+	position:relative;
+	padding:0 0 0 0;
+	margin : 0 450px 100px -25px;
+	width:100%;
+	height:100%;
+	border:2px  dashed red;
+	background-color:blue; 
+	z-index:12;
+}
+ #canvaslip
+{
+	position:relative;
+	padding:0 0 0 0;
+	/* margin : 0 450px 100px -25px; */
+	width:100%;
+	height:40px;
+	border:2px  dashed red;
+	background-color:blue; 
+	z-index:11;
+}
+#content
+{
+	position:fixed;
+	z-index:8;
+	top:135px;
+	left:30%;
+	margin-left:100px;
+	bottom: 2px;
+	min-width:900px;
+	max-width:900px;
+	/* border:2px  dashed black; */
+	width:50%;
+	height:650px;
+	background-color:#f2f2f2;
+	box-shadow: 1px 6px 3px #333333;
+	border-radius: 15px;
+	
+}
+

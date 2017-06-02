@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Practice</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Form practice" />
+		<meta name="keywords" content="HTML,CSS,forms,fun"/>
+		<meta name="author" content="Kishon Diaz" />
+	</head>
+	<body>
+	
+		This is a form:<br/>
+		<form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+			<fieldset>
+				<fieldset>
+				<legend>Personal Info</legend>
+				First Name: <input type="text" name="fname" size="40" /><br/><br/>
+				Last Name: <input type="text" name="lname" size="40" /><br/><br/>
+				</fieldset>
+				Gender <br/>
+				<input type="radio" name="gender" value="male" />Male
+				<input type="radio" name="gender" value="female" />Female
+				<br/>
+				<br/>
+				Choose your hobby:<br/>
+				<input type="checkbox" name="hobby" value="programming" />Programming<br/>
+				<input type="checkbox" name="hobby" value="html" />HTML<br/>
+				<input type="checkbox" name="hobby" value="photoshop" />Photoshop<br/>
+				<br/>
+				This is a drop down list: <br/>
+				<select name="animal">
+					<option value="dog">Dog</option>
+					<option value="cat">Cat</option>
+					<option value="horse" selected>Horse</option>
+				</select>
+				<br/>
+				<br/>
+				This is a drop down list with more then one option: <br/>
+				<select name="car" multiple>
+					<option value="audi">Audi</option>
+					<option value="bmw">BMW</option>
+					<option value="meceds" selected>Mercedes</option>
+				</select>
+				<br/>
+				<br/>
+				Password: <input type="password" name="password" size="8" maxlength="6"/>
+				<br/>
+				<br/>
+				Add a file? <input type="file" />
+				<br/>
+				<br/>
+				<textarea placeholder="Type here..." rows="4" cols="50"></textarea>
+				
+				
+				
+				<br/>
+				<br/>
+				Would you like to be added to our mailing list: <br/>
+				<input type="checkbox" name="list" value="yes" checked /> 
+				<br/>
+				<br/>
+				<input type="submit" value="submit" /> <br/><br/>
+				<input type="reset" value="Clear" /> 
+				</fieldset>
+		</form>
+	</body>
+	
+	
+</html>

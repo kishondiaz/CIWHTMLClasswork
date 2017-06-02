@@ -1,0 +1,56 @@
+/*for(var i=0 ; i< dateNumber.length ; ++i)
+{
+	q++;
+	arr.push(dateNumber[i]);
+	//This gets the end of the calendar
+	/* if(i <= currentMonth.getDate()-1)
+	{
+		console.log(arr[i].innerHTML);
+		dateNumber[i].innerHTML = i+1;
+		
+	}
+	if(i > currentMonth.getDate()-1)
+	{
+
+		s++;
+		console.log(s);
+		dateNumber[i].innerHTML = s;
+	} *	
+	//console.log(f);;
+	if(i <=f)
+	{
+		
+		dateNumber[i].innerHTML = "";
+		
+	}else
+	{
+
+		s++;
+		
+		dateNumber[i].innerHTML = s;
+		console.log(dateNumber[i].innerHTML );
+		innerDate[i].onmouseover = function()
+		{
+			if(dateNumber[i].innerHTML === 1)
+			{
+				console.log(dateNumber[i].innerHTML);
+			}
+		}
+	}
+	// if(i <= currentMonth.getDate())
+	// {
+		// console.log(dateNumber[i].innerHTML=i);
+	// }
+	// else if( i > nextMonth.getDate() )
+	// {	s=0;
+		// s++;
+		// console.log("here"+s);
+		// so = true;
+		
+		// dateNumber[i].innerHTML =i;
+	// }
+	// if(so == true)
+	// {
+		// dateNumber[s].innerHTML =s;
+	// }
+}*/

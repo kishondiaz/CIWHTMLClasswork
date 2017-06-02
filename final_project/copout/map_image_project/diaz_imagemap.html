@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image Map</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="image map">
+		<meta name="keywords" content="css,html,javascript,image map">
+		<meta name="author" content="kishon">
+		<!-- this script is so i can pass the map area id's to the jscript.jscript
+			the reason why is my div that i programmed to follow the mouse used as a backboard
+			i have to place it before the map and image because it will be pushed to the bottom and it
+			would take more css then is needed in javascript because the html and css in this script is 99%
+			dynamic including the video tag i used the DOM to create it and its source tags -->
+		<script src="javascript/passMapInfo.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet/style.css"/>
+	</head>
+	<body>
+		
+		<!-- this script creats 99% dynamic objects and contorls the motions of a standard div -->
+		<script src="javascript/jscript.js"></script>
+		<img id="shapes" src="assets/imagemap.png" alt="shape image map" width="750" height="600" usemap="#thismap"/>
+		 
+    	<map name="thismap">
+			<!-- corresponding videos these are not mine i do not claim the rights to any videos they belog to thier reseptive owners
+				using videos for educational purposes -->
+			<!-- https://www.youtube.com/watch?v=4elLkaeLqZQ -->
+			<area id="star" shape="poly" coords="67,125,124,125,140,75,158,124,213,125,168,156,186,207,141,176,96,207,113,156" href="http://www.history.com/shows/the-universe/videos/the-universe-life-and-death-of-a-star">
+			<!-- https://www.youtube.com/watch?v=4jLN56GlNHQ -->
+			<area id="circle" shape="circle" coords="606,143,69" href="http://lifehacker.com/5917544/draw-a-perfect-circle-without-any-extra-tools">
+			<!-- https://www.youtube.com/watch?v=5bDJDvNgoj0 -->
+			<area id="rectangle" shape="rect" coords="299,248,456,350" href="http://www.open.edu/openlearn/history-the-arts/culture/philosophy/the-golden-ratio-possibly-the-best-rectangle-the-world">
+			<!-- http://study.com/academy/lesson/what-is-a-polygon-definition-shapes-angles.html -->
+			<area id="polygon" shape="poly" coords="105,387,183,388,219,460,183,531,105,531,68,459" href="http://study.com/academy/lesson/what-is-a-polygon-definition-shapes-angles.html">
+			<!-- https://www.youtube.com/watch?v=bDYWUGCgKCI -->
+			<area id="arrow" shape="poly" coords="539,411,590,363,650,424,676,401,674,502,573,499,598,474" href="https://www.youtube.com/watch?v=bDYWUGCgKCI">
+		</map> 
+		
+		
+		
+	</body>
+</html>

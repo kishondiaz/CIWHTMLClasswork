@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>final project</title>
+		<meta charset="UTF-8" >
+		<meta name="description" content="Final Project" />
+		<meta name="keywords" content="HTML,CSS,forms,fun"/>
+		<meta name="author" content="Kishon Diaz" />
+		<link rel="stylesheet" type="text/css" href="./stylesheet/style.css"/>
+	</head>
+
+	
+	<body>
+		<div id="wrapper">
+			<header></header>
+				<nav>
+					<div id="btncontainer">
+						<button id="homeicon" onclick="homeonclick()" ></button>
+						<button id="menuicon" onclick="menuclick()"></button>
+					</div>
+					<div id="calenderset">
+					
+						<button id="calanderbtn" onclick="calanderbtnclick()">Calender</button>
+						<select id="calenderindex" multiple>
+							<option>Last</option>
+							<option>Current</option>
+							<option>Next</option>
+						</select>
+						
+					</div>
+				</nav>
+			<aside id="menu">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">My Codes</a></li>
+					<li><a href="">3d Models</a></li>
+					<li><a href="">About Me</a></li>
+					<li><a href="">Contact Me</a></li>
+				</ul>
+			</aside>
+			<div id="content">
+			</div>
+			<div id="canvaspage">
+				<div id="canasdrawnobe" onclick="drawknobeonClick()"></div>
+				<div id="canvascontainer"></div><!-- <canvas id="canvas"></canvas>< /div>-->
+				<!-- <div id="lastmonth"></div>
+				<div id="currentmonth"></div>
+				<div id="previousmonth"></div> -->
+			</div>
+			<footer></footer>
+		</div>
+		
+	<script src="./javascript/jscript.js"></script>
+	</body>
+</html>
